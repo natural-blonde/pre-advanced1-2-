@@ -1,0 +1,224 @@
+body {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.game {
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.game__box {
+  width: 300px;
+  height: 300px;
+  background-color: lightgray;
+  -webkit-box-shadow: 0 0 10px 0px;
+          box-shadow: 0 0 10px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.game__cell {
+  width: 75px;
+  height: 75px;
+}
+
+.game__item {
+  width: 75px;
+  height: 75px;
+  border: 1px solid black;
+}
+
+.game__item[value="1"] {
+  background-position: 0 0;
+}
+
+.game__item[value="2"] {
+  background-position: -75px 0;
+}
+
+.game__item[value="3"] {
+  background-position: -150px 0;
+}
+
+.game__item[value="4"] {
+  background-position: -225px 0;
+}
+
+.game__item[value="5"] {
+  background-position: 0 -75px;
+}
+
+.game__item[value="6"] {
+  background-position: -75px -75px;
+}
+
+.game__item[value="7"] {
+  background-position: -150px -75px;
+}
+
+.game__item[value="8"] {
+  background-position: -225px -75px;
+}
+
+.game__item[value="9"] {
+  background-position: 0 -150px;
+}
+
+.game__item[value="10"] {
+  background-position: -75px -150px;
+}
+
+.game__item[value="11"] {
+  background-position: -150px -150px;
+}
+
+.game__item[value="12"] {
+  background-position: -225px -150px;
+}
+
+.game__item[value="13"] {
+  background-position: 0 -225px;
+}
+
+.game__item[value="14"] {
+  background-position: -75px -225px;
+}
+
+.game__item[value="15"] {
+  background-position: -150px -225px;
+}
+
+.game__item[value="16"] {
+  background-position: -225px -225px;
+}
+
+.timer {
+  font-size: 70px;
+}
+
+.container {
+  padding-top: 100px;
+  height: 300px;
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .timer {
+  font-size: 70px;
+}
+
+.container .start,
+.container .check,
+.container .newGame {
+  height: 30px;
+  color: white;
+  width: 100px;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: #c54245;
+  border: none;
+}
+
+.container .close {
+  background-color: #da3c3c;
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  border: none;
+}
+
+.container .check2 {
+  background-color: #48bd48;
+  height: 30px;
+  width: 70px;
+  border-radius: 5px;
+  border: none;
+}
+
+.container .modal {
+  position: absolute;
+  background-color: white;
+  height: 160px;
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .modalContianer {
+  height: 160px;
+  width: 340px;
+  margin: 0 auto;
+  position: absolute;
+  top: -140px;
+  z-index: 9;
+  display: none;
+}
+
+.blackScreen {
+  position: absolute;
+  background-color: black;
+  opacity: 0.5;
+  height: 160%;
+  width: 100%;
+  display: none;
+  z-index: 9;
+}
+/*# sourceMappingURL=style.css.map */
